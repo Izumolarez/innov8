@@ -1,18 +1,6 @@
-<?php
-	define('DOT','.');
-	require_once(DOT ."/bootstrap.php");
-	$HasPage = false;
-		if(isset($_REQUEST['page'])){
-		$HasPage = true;
-		$page = $_REQUEST['page'];
-		include_once(DOT ."/_index/{$page}/{$page}.php");
-		}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <base href="<?= $core->domain; ?>">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
