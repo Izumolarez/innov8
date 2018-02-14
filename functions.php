@@ -9,7 +9,7 @@
 	
 	function NewUser($email,$firstname,$lastname,$password,$mobile,$token){
 		global $dbCon;
-		$sql = "INSERT INTO accounts(email,firstname,lastname,,password,mobiletoken) VALUES('$email','$firstname','$lastname','$password','$mobile','$token')";
+		$sql = "INSERT INTO accounts(email,firstname,lastname,password,mobile,token) VALUES('$email','$firstname','$lastname','$password','$mobile','$token')";
 		$NewUser = mysqli_query($dbCon,$sql);
 		return mysqli_insert_id();
 	}
