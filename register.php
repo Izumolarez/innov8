@@ -19,7 +19,7 @@
 		$create = NewUser($email,$firstname,$lastname,$p1,$mobile,$token);
 		
 		if($create){
-			$subject = "NoReply@Innov8.com";
+			$subject = "Innov8 Support";
 			$headers = 'From: NoReply@Innov8.com' . "\r\n" .
 						'Reply-To: support@Innov8.com' . "\r\n" .
 						'X-Mailer: PHP/' . phpversion();
